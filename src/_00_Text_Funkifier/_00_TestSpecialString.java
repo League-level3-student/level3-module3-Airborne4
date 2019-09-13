@@ -15,12 +15,16 @@ public class _00_TestSpecialString {
 	//   funkifyText method.
 	
 	//2. Fill in the funkifyText method in the BackwardsString class
-	//   to make the JUnitTest pass.
+	//   to make the JUnitTest pass. 
 	@Test
 	public void testBackwardsString() {
 		SpecialString bs = new BackwardsString("This is a test");
 		System.out.println(bs);
+		StringBuffer sb = new StringBuffer ("This is a test");
+		System.out.println(sb.reverse());
 		assertEquals("tset a si sihT", bs.toString());
+		assertEquals("tset a si sihT", sb.toString());
+		
 	}
 	
 	//3. Fill in the funkifyTxt method in the MixedCapsString class
