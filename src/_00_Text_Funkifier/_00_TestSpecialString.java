@@ -19,11 +19,7 @@ public class _00_TestSpecialString {
 	@Test
 	public void testBackwardsString() {
 		SpecialString bs = new BackwardsString("This is a test");
-		System.out.println(bs);
-		StringBuffer sb = new StringBuffer ("This is a test");
-		System.out.println(sb.reverse());
 		assertEquals("tset a si sihT", bs.toString());
-		assertEquals("tset a si sihT", sb.toString());
 		
 	}
 	
@@ -33,7 +29,10 @@ public class _00_TestSpecialString {
 	public void testMixedCapsString() {
 		SpecialString mcs = new MixedCapsString("This is also a test");
 		System.out.println(mcs);
-		assertEquals("tHiS Is aLsO A TeSt", mcs.toString());
+		
+		//assertEquals("tHiS Is aLsO A TeSt", mcs.toString()); 
+		assertEquals("THIS IS ALSO A TEST", mcs.toString()); 
+		
 	}
 	
 	//4. Create your own class that extends SpecialString.
