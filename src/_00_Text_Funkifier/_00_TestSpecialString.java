@@ -31,7 +31,7 @@ public class _00_TestSpecialString {
 		System.out.println(mcs);
 		
 		//assertEquals("tHiS Is aLsO A TeSt", mcs.toString()); 
-		assertEquals("THIS IS ALSO A TEST", mcs.toString()); 
+		assertEquals("This is also a test", mcs.toString()); 
 		
 	}
 	
